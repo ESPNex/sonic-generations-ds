@@ -248,7 +248,7 @@ int main(void) {
             }
             const s16 *use_rots = idrots;  /* TEST: posa di riposo */
 
-            for (int i = 0; i < P->model->nmeshes; i++)
+            for (int i = 0; i < 1; i++)   /* TEST: SOLO mesh 0 (corpo) */
                 r3d_draw_mesh_anim(P->model, i, px, py, 0, use_rots, P->pivots, P->remap);
 #endif
 #endif
