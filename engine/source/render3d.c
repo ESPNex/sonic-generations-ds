@@ -139,7 +139,7 @@ void r3d_draw_mesh(const R3DModel *m, int mi, int wx, int wy, int wz) {
                 /* u e' <<12 (0..4096 = 0..1); t16 = texel<<4 = u*W>>8 */
                 glTexCoord2t16((u * tw) >> 8, (v * tw) >> 8);
             }
-            glVertex3v16(V[3*vi], V[3*vi+1], V[3*vi+2]);
+            glVertex3v16((s16)V[3*vi], (s16)V[3*vi+1], (s16)V[3*vi+2]);  /* v16 firmati! */
         }
     }
     glEnd();
@@ -209,7 +209,7 @@ void r3d_draw_mesh_anim(const R3DModel *m, int mi, int wx, int wy, int wz,
                 int u = U[2*vi], v = U[2*vi+1];
                 glTexCoord2t16((u * tw) >> 8, (v * tw) >> 8);
             }
-            glVertex3v16((u16)sx, (u16)sy, (u16)sz);
+            glVertex3v16((s16)sx, (s16)sy, (s16)sz);  /* v16 firmati: u16 faceva overflow vertici negativi -> triangoli esplosi */
         }
     }
     glEnd();
