@@ -122,7 +122,9 @@ static void load_act(int a) {
         rt_pd.run    = rig.anims[1].rots;  rt_pd.run_n   = rig.anims[1].nframes;
         rt_pd.jump   = rig.anims[2].rots;  rt_pd.jump_n  = rig.anims[2].nframes;
         rt_pd.damage = rig.anims[3].rots;  rt_pd.damage_n= rig.anims[3].nframes;
-        P = &rt_pd;
+        P = &players[a];   /* TEST-BISECT anim: usa le animazioni BAKE (anim_sonic.h)
+                            * per capire se la deformazione e' nello skinning o nel
+                            * parsing CANM runtime (per ripristinare: P = &rt_pd) */
     } else {
         P = &players[a];   /* fallback: header bake-ati */
     }
@@ -246,10 +248,10 @@ int main(void) {
                 }
                 id_ok = 1;
             }
-            const s16 *use_rots = idrots;  /* TEST: posa di riposo */
+            const s16 *use_rots = rots;  /* animazioni originali */
 
-            /* TEST: solo mesh 0, vertici GREZZI senza skinning (bone-space?) */
-            r3d_draw_mesh(P->model, 0, px, py, 0);
+            for (int i = 0; i < P->model->nmeshes; i++)
+                r3d_draw_mesh_anim(P->model, i, px, py, 0, use_rots, P->pivots, P->remap);
 #endif
 #endif
         }
