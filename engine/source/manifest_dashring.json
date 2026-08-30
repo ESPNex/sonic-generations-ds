@@ -1,0 +1,15 @@
+{
+ "file": "/home/lardx/sgnds/extracted/pak/out/Modelli_BCRES/g_cmn_dash_ring_a.bcres",
+ "models": [
+  {
+   "name": "G_CMN_DASH_R_A",
+   "mesh_start": 0,
+   "mesh_count": 1,
+   "t_trans": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ ]
+}

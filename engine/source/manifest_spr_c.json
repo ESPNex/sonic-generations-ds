@@ -1,0 +1,25 @@
+{
+ "file": "/home/lardx/sgnds/extracted/pak/out/Modelli_BCRES/g_cmn_spr_c.bcres",
+ "models": [
+  {
+   "name": "G_CMN_SPR_C_R",
+   "mesh_start": 0,
+   "mesh_count": 1,
+   "t_trans": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "G_CMN_SPR_C_Y",
+   "mesh_start": 1,
+   "mesh_count": 1,
+   "t_trans": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ ]
+}

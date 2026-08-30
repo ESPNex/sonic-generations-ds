@@ -1,0 +1,15 @@
+{
+ "file": "/home/lardx/sgnds/extracted/pak/out/Modelli_BCRES/p_sonc.bcres",
+ "models": [
+  {
+   "name": "P_SONC_model",
+   "mesh_start": 0,
+   "mesh_count": 11,
+   "t_trans": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ ]
+}

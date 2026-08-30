@@ -1,0 +1,23 @@
+{
+ "BOSS1_ENE.amb": ["B_BIG"],
+ "BOSS2_ENE.amb": ["B_BIO (multi-parte: model/idle_b/idle_h/idle_t/damage*/die*/down_*/enter_*/okkake_*/pipe01-02_*/tamago_*/env00-01 + B_DxC/B_aZB/E_BfwZB)"],
+ "BOSS3_ENE.amb": ["B_EMP", "B_EMP_02", "B_EMP_S", "E_EMP", "E_EMP_S"],
+ "FINAL_ENE.amb": ["B_TET_01", "B_TET_02", "B_TET_03", "B_TET_04", "B_TET_05", "B_TET_06", "B_TET_07", "B_TET_CLC_NDL_L", "B_TET_CLC_NDL_S", "B_TET_ENV00"],
+ "RACE1_ENE.amb": ["B_MTA"],
+ "RACE2_ENE.amb": ["B_SHA"],
+ "RACE3_ENE.amb": ["B_L", "B_R", "B_SIL"],
+ "ZONE1_1_ENE.amb": ["B_L", "B_R", "E_BAT", "E_BIT", "E_GNI", "E_GNM", "E_MEB", "E_MEM", "E_MEMM", "E_MOT"],
+ "ZONE1_2_ENE.amb": ["B_L", "B_R", "E_BAT", "E_BIT", "E_GNI", "E_GNM", "E_MEB", "E_MEM", "E_MEMM", "E_MOT"],
+ "ZONE2_1_ENE.amb": ["E_GAD"],
+ "ZONE2_2_ENE.amb": ["E_GAD"],
+ "ZONE3_1_ENE.amb": ["E_HIDC", "E_HIDCH", "E_HIDM", "E_HIDMH", "E_MOGC", "E_MOGCH", "E_MOGCM", "E_TEF", "E_TEF_BODY", "E_TON"],
+ "ZONE3_2_ENE.amb": ["E_HIDC", "E_HIDCH", "E_MOGC", "E_MOGCH", "E_MOGM", "E_MOGMH", "E_MOGMM", "E_TEF", "E_TEF_BODY", "E_TON"],
+ "ZONE4_1_ENE.amb": ["E_KIB", "E_KIK", "E_RNO", "E_RNO_C", "E_SWE"],
+ "ZONE4_2_ENE.amb": ["E_KIB", "E_KIK", "E_RNO", "E_RNO_C", "E_SWE"],
+ "ZONE5_1_ENE.amb": ["E_BLE", "E_GUN", "E_GUN_A", "E_MNO"],
+ "ZONE5_2_ENE.amb": ["E_BLE", "E_GUN", "E_GUN_A", "E_MNO"],
+ "ZONE6_1_ENE.amb": ["E_EGD", "E_EGS", "E_FLN", "E_KRAA", "E_KRAB", "E_KRAC"],
+ "ZONE6_2_ENE.amb": ["E_EGD", "E_EGS", "E_FLN", "E_KRAA", "E_KRAB", "E_KRAC"],
+ "ZONE7_1_ENE.amb": ["E_EGN", "E_EGW", "E_EGWP", "E_EGWP1", "E_SPI"],
+ "ZONE7_2_ENE.amb": ["E_EGN", "E_EGW", "E_EGWP", "E_EGWP1", "E_SPI"]
+}
