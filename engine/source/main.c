@@ -238,15 +238,7 @@ int main(void) {
             for (int i = 0; i < P->model->nmeshes; i++)
                 r3d_draw_mesh(P->model, i, px, py, 0);
 #else
-            static s16 idrots[64 * 9];   /* rotazioni Q14 unitarie per bone */
-            static int id_ok;
-            if (!id_ok) {
-                for (int b = 0; b < 64; b++) {
-                    idrots[b*9 + 0] = 0x4000; idrots[b*9 + 4] = 0x4000; idrots[b*9 + 8] = 0x4000;
-                }
-                id_ok = 1;
-            }
-            const s16 *use_rots = idrots;  /* TEST: identita' (posa di riposo) */
+            const s16 *use_rots = rots;  /* animazioni originali */
             for (int i = 0; i < P->model->nmeshes; i++)
                 r3d_draw_mesh_anim(P->model, i, px, py, 0, use_rots, P->pivots, P->remap);
 #endif
